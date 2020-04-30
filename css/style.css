@@ -1,5 +1,12 @@
 #app {
   display: flex;
-  justify-content: center;
+  height: auto;
+  justify-content: space-around;
   font-family: 'EB Garamond', serif;
+}
+
+#b-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

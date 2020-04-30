@@ -12,14 +12,22 @@
 
 <body>
   <div id="app">
-    {{ message }}
-    {{ player.wisdom }}
-    <main-component :parentdata="player">
+    <!--{{ message }}
+    {{ player.wisdom }}-->
+    <a-component></a-component>
+    <div id="b-component">
+      <b1-component></b1-component>
+      <b2-component></b2-component>
+    </div>
+    <c-component></c-component>
   </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="js/components/main-component.js"></script>
+<script src="js/components/base-component.js"></script>
+<script src="js/components/main-components.js"></script>
+<script src="js/components/tabs/storyt.js"></script>
+<script src="js/components/tabs/resourcest.js"></script>
 <script src="js/resources.js"></script>
 <script src="js/index.js"></script>
 
