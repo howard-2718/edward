@@ -4,7 +4,8 @@
 Vue.mixin({
   data: function() {
     return {
-      player: resources
+      player: resources,
+      story: story_text,
     }
   }
 })
@@ -12,6 +13,6 @@ Vue.mixin({
 var app = new Vue({
   el: "#app",
   data: {
-    message: "No one knows a meteor story..."
+    message: "No one know a meteor story..."
   }
 })

@@ -11,7 +11,7 @@ Vue.component('base-component', {
       </button>
 
       <component v-bind:is="currentTabComponent" class="tab"></component>
-      {{player.wisdom}}
+      <!--{{player.wisdom}}-->
     </div>
     `
   ,
