@@ -3,11 +3,11 @@ Vue.component('a-component', {
 });
 
 Vue.component('b1-component', {
-  template: '<div class="main-component" id="b1-component"><base-component></base-component></div>'
+  template: '<div id="b1-component"><base-component></base-component></div>'
 });
 
 Vue.component('b2-component', {
-  template: '<div class="main-component" id="b2-component"><base-component></base-component></div>'
+  template: '<div id="b2-component"><base-component></base-component></div>'
 });
 
 Vue.component('c-component', {

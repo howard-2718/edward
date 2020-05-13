@@ -5,7 +5,7 @@ Vue.mixin({
   data: function() {
     return {
       player: resources,
-      story: story_text,
+      //story: story_text,
     }
   }
 })

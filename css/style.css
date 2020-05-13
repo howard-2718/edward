@@ -1,7 +1,7 @@
 #app {
   display: flex;
   height: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: 'EB Garamond', serif;
 }
 
@@ -9,4 +9,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.main-component {
+  flex: 0 0 33%;
 }

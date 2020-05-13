@@ -1,3 +1,9 @@
 Vue.component('tab-resources', {
-  template: "<div>Resources tab</div>"
+  template:
+    `
+    <div>
+      <p><strong>Resources</strong></p>
+      <p>wisdom: {{ player.wisdom }}<br>water: {{ player.water }}</p>
+    </div>
+    `
 });

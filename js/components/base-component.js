@@ -18,7 +18,7 @@ Vue.component('base-component', {
   data: function() {
     return {
       currentTab: "Story",
-      tabs: ["Story", "Resources"]
+      tabs: ["Resources", "Tasks", "Transmutation", "Sleep", "Story"]
     }
   },
   computed: {
