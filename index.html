@@ -12,14 +12,24 @@
 
 <body>
   <div id="app">
-    <!--{{ message }}
-    {{ player.wisdom }}-->
-    <a-component></a-component>
-    <div id="b-component" class="main-component">
-      <b1-component></b1-component>
-      <b2-component></b2-component>
+    <div id="mainDiv">
+      <!--{{ message }}
+      {{ player.wisdom }}-->
+      <a-component></a-component>
+      <div id="b-component" class="main-component">
+        <b1-component></b1-component>
+        <b2-component></b2-component>
+      </div>
+      <c-component></c-component>
     </div>
-    <c-component></c-component>
+    <div id="time_disp">
+      <!--This is a bit janky, but it works.
+      Esentially, the time values are being modulo'd for display, while
+      in reality they continue to grow unfettered.-->
+      <p>Formatted Time: Day {{time_v.day}},
+      <span v-if="time_v.hour % 24 < 10">0</span>{{time_v.hour % 24}}:<span v-if="time_v.minute % 60 < 10">0</span>{{time_v.minute % 60}}</p>
+      <p>Raw Time: {{time_v.raw.toFixed(0)}} ticks (where 10 ticks = 1 second)</p>
+    </div>
   </div>
 </body>
 

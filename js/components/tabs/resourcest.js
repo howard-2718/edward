@@ -3,7 +3,7 @@ Vue.component('tab-resources', {
     `
     <div>
       <p><strong>Resources</strong></p>
-      <p>wisdom: {{ player.wisdom }}<br>water: {{ player.water }}</p>
+      <p>wisdom: {{ resources_v.wisdom }}<br>water: {{ resources_v.water }}</p>
     </div>
     `
 });
