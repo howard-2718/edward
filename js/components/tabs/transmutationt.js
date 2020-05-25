@@ -3,7 +3,7 @@ Vue.component('tab-transmutation', {
     `
     <div>
       <p><strong>Transmutation</strong></p>
-      <p>Use your alchemical knowledge to convert resources into other resources</p>
+      <p><i>Use your alchemical knowledge to convert resources into other resources.</i></p>
     </div>
     `
 });

@@ -3,7 +3,7 @@ Vue.component('tab-sleep', {
     `
     <div>
       <p><strong>Sleep</strong></p>
-      <p>Going to sleep unlocks a whole host of new features and abilities (well, not yet)</p>
+      <p><i>Going to sleep unlocks a whole host of new features and abilities (well, not yet)</i></p>
     </div>
-    `    
+    `
 });

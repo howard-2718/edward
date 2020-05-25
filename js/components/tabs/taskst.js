@@ -3,7 +3,7 @@ Vue.component('tab-tasks', {
     `
     <div>
       <p><strong>Tasks</strong></p>
-      <p>It's about time to get some work done.</p>
+      <p><i>It's about time to get some work done.</i></p>
     </div>
     `
 });
