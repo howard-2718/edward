@@ -11,14 +11,13 @@ Vue.component('base-component', {
       </button>
 
       <component v-bind:is="currentTabComponent" class="tab"></component>
-      <!--{{player.wisdom}}-->
     </div>
     `
   ,
   data: function() {
     return {
       currentTab: "Story",
-      tabs: ["Resources", "Tasks", "Transmutation", "Sleep", "Story"]
+      tabs: ["Tasks", "Transmutation", "Sleep", "Story"]
     }
   },
   computed: {

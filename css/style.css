@@ -1,27 +1,41 @@
-#time-disp {
-  font-family: 'EB Garamond', serif;
-}
-
 #mainDiv {
   display: flex;
   height: auto;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   font-family: 'EB Garamond', serif;
 }
 
-#b-component {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#bottom-links {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  font-family: 'EB Garamond', serif;
 }
 
-.story-display {
+#bottom-links a {
+  padding: 6px;
+}
+
+#story-display {
   max-height: 400px;
   overflow-y: auto;
 }
 
-.main-component {
-  flex: 0 0 33%;
+#time-disp {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+#leftSide {
+  flex: 0 0 20%;
+}
+
+#centerSide {
+  flex: 0 0 60%;
+}
+
+#rightSide {
+  flex: 0 0 20%;
 }
 
 .main-component > div {

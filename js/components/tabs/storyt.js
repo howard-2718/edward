@@ -5,36 +5,37 @@ Vue.component('tab-story', {
       loge: loge,
       cur_indice: cur_indice,
       story: story_text,
-      show_advance: story_show_advance
+      show_advance: true
     }
   },
   template:
     `
     <div>
       <p><strong>Story</strong></p>
-      <div class="story-display">
+      <div id="story-display">
         <p v-for="text in loge" :key="text">{{ text }}</p>
       </div>
-      <p v-if="show_advance" v-on:click="next_story" id="advance-text">></p>
+      <p v-show="show_advance" v-on:click="next_story" id="advance-text">></p>
     </div>
     `
   ,
   methods: {
     next_story() {
       // Add the next story_text to loge
-      loge.push(story_text[cur_indice]);
       if(story_text[cur_indice].substr(-3) === "@@@"){
-        story_show_advance = false;
+        loge.push(story_text[cur_indice].slice(0, -3));
+        this.show_advance = false;
       }
-      console.log(loge);
+      else {
+        loge.push(story_text[cur_indice]);
+      }
+      //console.log(loge);
+      //console.log(this);
       cur_indice++;
 
       // Update the scroll wheels
-      var elements = document.getElementsByClassName("story-display");
-      for(i = 0; i < elements.length; i++){
-        elements[i].scrollTop = elements[i].scrollHeight;
-      }
-
+      var element = document.getElementById("story-display");
+      element.scrollTop = element.scrollHeight - 30;
     }
   }
 });
